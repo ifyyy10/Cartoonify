@@ -100,7 +100,7 @@ class Cartoonified_Image:
             cartoonized_img = cv2.bitwise_and(src1=smoothened_image, src2=smoothened_image, mask=edges)
         
             # Save the cartoon image in our cartooned_image directory.
-            # Noted that you must have a folder named cartooned_image in the project directory for the image to be saved and displayed
+            # Note that you must have a folder named cartooned_image in the project directory for the image to be saved and displayed
             cv2.imwrite(f'cartooned_image/{filename}', cartoonized_img)
 
             #Clear screen and display the cartooned image.
